@@ -1,7 +1,7 @@
 "use server"; // ESTE ARCHIVO ES EL EQUIVALENTE A UNA RUTA API
 import * as z from "zod";
 import { registerSchema } from "@/schemas";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { db } from "@/lib/db";
 import { getUserByEmail } from "@/data/user";
 import { generateVerificationToken } from "@/lib/token";
